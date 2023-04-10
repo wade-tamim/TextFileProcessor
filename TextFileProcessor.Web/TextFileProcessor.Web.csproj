@@ -6,4 +6,32 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\components\HomePageDescription.jsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\components\HomePageDescription.jsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\Error.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\assets\" />
+    <Folder Include="wwwroot\dist\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TexFileProcessor.Core\TexFileProcessor.Core.csproj" />
+  </ItemGroup>
+
 </Project>

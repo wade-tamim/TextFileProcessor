@@ -1,8 +1,18 @@
 ﻿import React from 'react';
-import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createRoot } from 'react-dom/client';
+import FileInput from './components/FileInput.jsx';
+import NavigationBar from './components/NavigationBar.jsx';
+import HomeDescription from './components/HomePageDescription.jsx';
 
 function App() {
-    return <h1>Hello, world!</h1>;
+    return(
+        <>
+            <NavigationBar />
+            <HomeDescription />
+            <FileInput />
+        </>
+    )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<App />);
