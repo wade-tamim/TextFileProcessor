@@ -1,0 +1,12 @@
+E:\TextFileProcessor\TextFileProcessor.Data\bin\Debug\net7.0\TextFileProcessor.Data.deps.json
+E:\TextFileProcessor\TextFileProcessor.Data\bin\Debug\net7.0\TextFileProcessor.Data.dll
+E:\TextFileProcessor\TextFileProcessor.Data\bin\Debug\net7.0\TextFileProcessor.Data.pdb
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.csproj.AssemblyReference.cache
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.AssemblyInfoInputs.cache
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.AssemblyInfo.cs
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.csproj.CoreCompileInputs.cache
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.dll
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\refint\TextFileProcessor.Data.dll
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\TextFileProcessor.Data.pdb
+E:\TextFileProcessor\TextFileProcessor.Data\obj\Debug\net7.0\ref\TextFileProcessor.Data.dll

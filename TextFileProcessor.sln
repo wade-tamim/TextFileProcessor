@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFileProcessor.Web", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexFileProcessor.Core", "TexFileProcessor.Core\TexFileProcessor.Core.csproj", "{073A4626-7F1E-496C-91FD-8A73D2ABA968}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFileProcessor.API", "TextFileProcessor.API\TextFileProcessor.API.csproj", "{6B469DC8-B89F-4AE0-BE7E-6F4F9CC1B982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFileProcessor.Data", "TextFileProcessor.Data\TextFileProcessor.Data.csproj", "{7762907F-6040-474F-86CE-201653410B79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{073A4626-7F1E-496C-91FD-8A73D2ABA968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073A4626-7F1E-496C-91FD-8A73D2ABA968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073A4626-7F1E-496C-91FD-8A73D2ABA968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B469DC8-B89F-4AE0-BE7E-6F4F9CC1B982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B469DC8-B89F-4AE0-BE7E-6F4F9CC1B982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B469DC8-B89F-4AE0-BE7E-6F4F9CC1B982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B469DC8-B89F-4AE0-BE7E-6F4F9CC1B982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7762907F-6040-474F-86CE-201653410B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7762907F-6040-474F-86CE-201653410B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7762907F-6040-474F-86CE-201653410B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7762907F-6040-474F-86CE-201653410B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

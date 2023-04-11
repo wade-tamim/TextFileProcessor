@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MgXBu5Q9q2CbYgUAc10kCn/W1+GP7UJmSGmBcNimXtE=",
+  "Source": "TextFileProcessor.API",
+  "BasePath": "_content/TextFileProcessor.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
