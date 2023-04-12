@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
+using System.Reflection;
 using TexFileProcessor.Core.Interfaces;
+using TexFileProcessor.Core.Models;
 
 namespace TextFileProcessor.API.Controllers
 {
@@ -9,9 +12,12 @@ namespace TextFileProcessor.API.Controllers
     {
         private readonly IFileProcessorServices _fileProcessorServices;
         private readonly ILogger<ProcessFileController> _logger;
-        public ProcessFileController(IFileProcessorServices fileProcessorServices)
+        private readonly IProcessedFileRepository _processedFileRepository;
+        public ProcessFileController(IFileProcessorServices fileProcessorServices, ILogger<ProcessFileController> logger, IProcessedFileRepository processedFileRepository)
         {
             _fileProcessorServices = fileProcessorServices;
+            _logger = logger;
+            _processedFileRepository = processedFileRepository;
         }
 
         [HttpPost("PostFile")]
@@ -37,6 +43,26 @@ namespace TextFileProcessor.API.Controllers
             }
 
             return Ok(model);
+        }
+
+        [HttpPost ("SaveFileInfo")]
+        [SwaggerOperation(Summary = "Saves file info", Description = "Adds information about a processed file to the database.")]
+
+        public async Task<IActionResult> SaveFileInfo(ProcessedFileDto fileInfo)
+        {
+            if (fileInfo == null)
+            {
+                return BadRequest("needs info to save!");
+            }
+
+            if (_processedFileRepository.Add(fileInfo))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest("Something went wrong!");
+            }
         }
     }
 }

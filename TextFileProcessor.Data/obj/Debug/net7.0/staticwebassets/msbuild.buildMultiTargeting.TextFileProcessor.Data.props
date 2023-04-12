@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TextFileProcessor.Data.props" />
+</Project>

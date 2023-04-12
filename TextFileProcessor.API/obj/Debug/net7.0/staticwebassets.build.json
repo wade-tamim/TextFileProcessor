@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "MgXBu5Q9q2CbYgUAc10kCn/W1+GP7UJmSGmBcNimXtE=",
+  "Hash": "NZ3/JcMN0S1FUIFuxLfXlAwqaMrSLjnP6aVvKteVMDo=",
   "Source": "TextFileProcessor.API",
   "BasePath": "_content/TextFileProcessor.API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "E:\\TextFileProcessor\\TextFileProcessor.Data\\TextFileProcessor.Data.csproj",
+      "Version": 2,
+      "Source": "TextFileProcessor.Data",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

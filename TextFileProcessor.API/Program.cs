@@ -1,18 +1,23 @@
+using Microsoft.EntityFrameworkCore;
+using TexFileProcessor.Core.AutoMapper;
 using TexFileProcessor.Core.Interfaces;
+using TexFileProcessor.Core.Repository;
 using TexFileProcessor.Core.Services;
+using TextFileProcessor.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IFileProcessorServices, FileProcessorServices>();
+builder.Services.AddAutoMapper(typeof(DataMappingProfile).Assembly);
+builder.Services.AddScoped<IProcessedFileRepository, ProcessedFileRepository>();
+builder.Services.AddDbContext<TextFileProcessorDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TextFileProcessorDB")));
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
